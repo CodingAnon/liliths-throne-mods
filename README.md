@@ -3,4 +3,4 @@
 A small mod for Lilith's Throne, adding the following items:
 - Cheongsam, with waist-high slits
 - Latex gloves, long
-- Latex Boots, thigh-high
+- Latex boots, thigh-high
