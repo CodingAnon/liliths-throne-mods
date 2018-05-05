@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <clothing>	
 	<coreAtributes>
-		<value>1800</value> 
-		<determiner><![CDATA[a pair of]]></determiner>
-		<name><![CDATA[thigh-high latex boots]]></name>		
-		<namePlural pluralByDefault="true"><![CDATA[thigh-high latex boots]]></namePlural> 	
-		<description><![CDATA[A pair of shiny, high-heeled latex boots.]]></description> 
+		<value>300</value> 
+		<determiner><![CDATA[a small latex tube top]]></determiner>
+		<name><![CDATA[small latex tube top]]></name>		
+		<namePlural pluralByDefault="false"><![CDATA[small latex tube tops]]></namePlural> 	
+		<description><![CDATA[A shiny, latex tube top, designed to fit snugly around the chest.]]></description> 
 		<physicalResistance>1</physicalResistance> 
 		<femininity>FEMININE</femininity> 
-		<slot>FOOT</slot> 
+		<slot>CHEST</slot> 
 		<rarity>UNCOMMON</rarity> 
 		<clothingSet/> 
-		<imageName>foot_thigh_high_latex_boots.svg</imageName> 
+		<imageName>torso_tube_top_latex.svg</imageName> 
 		<imageEquippedName/> 
 		<enchantmentLimit/>
 		<effects/>
@@ -19,13 +19,26 @@
 			<blockedParts>
 				<displacementType>REMOVE_OR_EQUIP</displacementType> 
 				<clothingAccessRequired> 
-					<clothingAccess>FEET</clothingAccess>
-					<clothingAccess>CALVES</clothingAccess>
+					<clothingAccess>ARMS_UP_TO_SHOULDER</clothingAccess>
+					<clothingAccess>HEAD</clothingAccess>
 				</clothingAccessRequired>
 				<blockedBodyParts/>
 				<clothingAccessBlocked/>
+				<concealedSlots/>
+			</blockedParts>
+			<blockedParts>
+				<displacementType>PULLS_UP</displacementType>
+				<clothingAccessRequired/>
+				<blockedBodyParts>
+					<bodyPart>BREASTS</bodyPart>
+					<bodyPart>NIPPLES</bodyPart>
+				</blockedBodyParts>
+				<clothingAccessBlocked>
+					<clothingAccess>CHEST</clothingAccess>
+				</clothingAccessBlocked>
 				<concealedSlots>
-					<slot>SOCK</slot>
+					<slot>NIPPLE</slot>
+					<slot>PIERCING_NIPPLE</slot>
 				</concealedSlots>
 			</blockedParts>
 		</blockedPartsList>
@@ -69,55 +82,81 @@
 	</coreAtributes>
 	<displacementText type="REMOVE_OR_EQUIP">
 		<playerSelf><![CDATA[
-			You pull off your boots.
+			You pull off your tube top.
 		]]></playerSelf>
 		<playerNPC><![CDATA[
-			You pull off [npc.name]'s boots.
+			You slide [npc.name]'s tube top up and over [npc.her] head.
 		]]></playerNPC>
 		<playerNPCRough><![CDATA[
-			You grab [npc.name]'s [npc.feet] and roughly pull [npc.her] boots off.
+			You roughly slide [npc.name]'s tube top up and over [npc.her] head.
 		]]></playerNPCRough>
 		<NPCSelf><![CDATA[
-			[npc.Name] pulls [npc.her] boots off.
+			[npc.Name] pulls off [npc.her] tube top.
 		]]></NPCSelf>
 		<NPCPlayer><![CDATA[
-			[npc.Name] pulls your boots off.
+			[npc.Name] slides your tube top up and over your head.
 		]]></NPCPlayer>
 		<NPCPlayerRough><![CDATA[
-			[npc.Name] grabs your [pc.feet] and roughly pulls your boots off.
+			[npc.Name] roughly slides your tube top up and over your head.
 		]]></NPCPlayerRough>
 		<NPCOtherNPC><![CDATA[
-			[npc1.Name] pulls [npc2.name]'s boots off.
+			[npc1.Name] pulls off [npc2.name]'s tube top.
 		]]></NPCOtherNPC>
 		<NPCOtherNPCRough><![CDATA[
-			[npc.Name] grabs [npc2.name]'s [npc2.feet] and roughly pulls [npc2.name]'s boots off.
+			[npc1.Name] roughly pulls off [npc2.name]'s tube top.
 		]]></NPCOtherNPCRough>
 	</displacementText>
 	<replacementText type="REMOVE_OR_EQUIP">
 		<playerSelf><![CDATA[
-			You push your feet into the boots and pull them up to your thighs.
+			You pull on the tube top.
 		]]></playerSelf>
 		<playerNPC><![CDATA[
-			You guide [npc.name]'s [npc.feet] into the boots and pull them up to [npc.her] thighs.
+			You pull the tube top over [npc.name]'s head.
 		]]></playerNPC>
 		<playerNPCRough><![CDATA[
-			You hold [npc.name] still as you roughly force [npc.her] [npc.feet] into the boots and pull them up to [npc.her] thighs.
+			You hold [npc.name] still as you roughly force the tube top over [npc.name]'s head.
 		]]></playerNPCRough>
 		<NPCSelf><![CDATA[
-			[npc.Name] puts [npc.her] [npc.feet] into the boots and pulls them up to [npc.her] thighs.
+			[npc.Name] pulls on the tube top.
 		]]></NPCSelf>
 		<NPCPlayer><![CDATA[
-			[npc.Name] guides your [pc.feet] into the boots, before pulling up to your thighs.
+			[npc.Name] pulls the tube top over your head.
 		]]></NPCPlayer>
 		<NPCPlayerRough><![CDATA[
-			[npc.Name] holds you still as [npc.she] roughly forces your [pc.feet] into the boots and pull them up to your thighs.
+			[npc.Name] holds you still as [npc.she] roughly forces the tube top over your head.
 		]]></NPCPlayerRough>
 		<NPCOtherNPC><![CDATA[
-			[npc1.Name] guides [npc2.name]'s [npc2.feet] into the boots, before pulling up to [npc2.her] thighs.
+			[npc1.Name] pulls the tube top over [npc2.name]'s [npc2.head].
 		]]></NPCOtherNPC>
 		<NPCOtherNPCRough><![CDATA[
-			[npc1.Name] holds [npc2.name] still as [npc1.she] roughly forces [npc2.name]'s [npc2.feet] into the boots, before pulling up to [npc2.her] thighs.
+			[npc1.Name] holds [npc2.name] still as [npc1.she] roughly forces the tube top over [npc2.name]'s [npc2.head].
 		]]></NPCOtherNPCRough>
 	</replacementText>
+	<displacementText type="PULLS_UP">
+		<playerSelf><![CDATA[
+			You pull your tube top up.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You pull [npc.name]'s tube top up.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You roughly pull [npc.name]'s tube top up.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] pulls [npc.her] tube top up.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] pulls your tube top up.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] roughly pulls your tube top up.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] pulls [npc2.name]'s tube top up.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc.Name] roughly pulls [npc2.name]'s tube top up.
+		]]></NPCOtherNPCRough>
+	</displacementText>
 	
 </clothing>
